@@ -1,0 +1,15 @@
+generated: '2026-09-27'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.bagborroworsteal.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec  4 00:46:09 2026 GMT
+  hsts: false
+domains:
+- domain: bagborroworsteal.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: false

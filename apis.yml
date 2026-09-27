@@ -1,23 +1,73 @@
 aid: bag-borrow-or-steal
+
 name: Bag Borrow or Steal
+
+image: https://www.bagborroworsteal.com/images/tiles/logo_bbos_square.gif
+
 description: 'Bag Borrow or Steal is a company surfaced via the API Evangelist harvest backlog (source:
   secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
 url: https://raw.githubusercontent.com/api-evangelist/bag-borrow-or-steal/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
-- Company
-apis: []
+- Handbags
+- Rental
+- Authentication
+- Accessories
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/bag-borrow-or-steal-hosts.yml
+- type: Vendors
+  url: vendors/bag-borrow-or-steal-vendors.yml
+- type: TermsOfService
+  url: https://www.bagborroworsteal.com/termsandconditions
+- type: SignUp
+  url: https://www.bagborroworsteal.com/join/signUpForEmails
+- type: PrivacyPolicy
+  url: https://www.bagborroworsteal.com/privacy
+- type: Newsroom
+  url: https://www.bagborroworsteal.com/press
+- type: DomainSecurity
+  url: security/bag-borrow-or-steal-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/bag-borrow-or-steal_stock/
+  url: https://www.bagborroworsteal.com
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-09-27'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://forgeglobal.com/bag-borrow-or-steal_stock/
+    status: 403
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
